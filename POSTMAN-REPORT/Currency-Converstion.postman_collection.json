@@ -1,0 +1,55 @@
+{
+	"info": {
+		"name": "Currency-Converstion",
+		"_postman_id": "d9284390-3181-0e2f-72a1-c9bb82904677",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8082/rest/hello/converstion",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "sam",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "Sam",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \n\n   \"fromCurrencyCode\":\"USD\",\n   \"amountEnter\":100,\n   \"toCurrencyCode\":\"INR\"\n   \n\n }\n   "
+				},
+				"url": {
+					"raw": "localhost:8082/rest/hello/converstion",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"rest",
+						"hello",
+						"converstion"
+					]
+				},
+				"description": "CHEAKING THE CURRENCY-CONVERSTION IS WORKING"
+			},
+			"response": []
+		}
+	]
+}
